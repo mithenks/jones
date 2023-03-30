@@ -1,7 +1,9 @@
 # Jones Java library
 
 ![Java 17](https://img.shields.io/static/v1?label=Java&message=17&color=green) 
-![Docker support](https://img.shields.io/static/v1?label=Docker&message=yes&color=green)
+![Docker support](https://img.shields.io/static/v1?label=Docker%20support&message=yes&color=green)
+
+[![Build](https://github.com/mithenks/jones/actions/workflows/github-actions-build.yml/badge.svg)](https://github.com/mithenks/jones/actions/workflows/github-actions-build.yml) [![Test](https://github.com/mithenks/jones/actions/workflows/github-actions-test.yml/badge.svg)](https://github.com/mithenks/jones/actions/workflows/github-actions-test.yml) [![Package](https://github.com/mithenks/jones/actions/workflows/github-actions-package.yml/badge.svg)](https://github.com/mithenks/jones/actions/workflows/github-actions-package.yml)
 
 Java library to test GitHub CI/CD integration. 
 
@@ -14,7 +16,7 @@ Create an alias for the `memento docker configure` command:
 alias mdc="memento docker configure"
 ```
 
-First, create the docker environment needed to work with your project:
+First, create the docker environment for your project:
 ```bash
 mdc docker:create
 ```
