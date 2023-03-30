@@ -12,6 +12,8 @@ fi
 
 if [[ "$1" == "run" ]]; then
   echo -e "============ ${CB}Showing${CN} outdated dependencies ..."
-  echo "${LOGPREFIX} CMD ${C_BIN} mvn versions:display-dependency-updates" >> ${LOGFILE}
+  echo "${LOGPREFIX} CMD ${C_BIN} mvn -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn versions:display-plugin-updates" >> ${LOGFILE}
+  ${C_BIN} mvn versions:display-plugin-updates
+  echo "${LOGPREFIX} CMD ${C_BIN} mvn -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn versions:display-dependency-updates" >> ${LOGFILE}
   ${C_BIN} mvn versions:display-dependency-updates
 fi
