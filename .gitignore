@@ -1,0 +1,5 @@
+/.bmeme/build/log
+/.cache/
+/target/
+/.vscode/
+/.idea/
